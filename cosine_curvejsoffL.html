@@ -1415,10 +1415,10 @@ Expr([[-Xhaba,-Yhaba-4],"w","q"],["size->20"]);
 
 
 
-Plotdata("1","cos(x)","x",["da","size->1.5"]);
-Plotdata("2","(A.x)*cos((C.x)*(x-(P.x)))+(Q.x)","x",[]);
+Plotdata("1","cos(x)","x",["da","size->1.5","Num=200","Dis=40"]);
+Plotdata("2","(A.x)*cos((C.x)*(x-(P.x)))+(Q.x)","x",["Num=200","Dis=40"]);
 Expr([[1.5,1.5],"e","y=\cos x"],["size->20"]);
-Expr([[-8,4],"e","A\cos (C(x-p))+q"],["size->20"]);
+Expr([[-8,4],"e","y=A\cos (C(x-p))+q"],["size->20"]);
 
 
 Windispg();
@@ -1439,18 +1439,18 @@ var cdy = CindyJS({
   geometry: [
     {name: "SW", type: "Free", pos: [4.0, 2.0, -0.4], color: [1.0,1.0,1.0], labeled: false, size: 2.0, border:false },
     {name: "NE", type: "Free", pos: [4.0, 2.0, 0.4], color: [1.0,1.0,1.0], labeled: false, size: 2.0, border:false },
-    {name: "A", type: "Free", pos: [0.6701444607013333, -4.0, 0.6666666666666666], color: [1.0, 0.0, 0.0], labeled: false, size: 3.0, border: true },
-    {name: "C", type: "Free", pos: [0.5744095377439999, -4.0, 0.5714285714285714], color: [1.0, 0.0, 0.0], labeled: false, size: 3.0, border: true },
-    {name: "P", type: "Free", pos: [-0.02513041727629139, -4.0, 0.5], color: [1.0, 0.0, 0.0], labeled: false, size: 3.0, border: true },
-    {name: "Q", type: "Free", pos: [-0.022338148690222222, -4.0, 0.4444444444444444], color: [1.0, 0.0, 0.0], labeled: false, size: 3.0, border: true }
+    {name: "A", type: "Free", pos: [0.6666666666666666, -4.0, 0.6666666666666666], color: [1.0, 0.0, 0.0], labeled: false, size: 3.0, border: true },
+    {name: "C", type: "Free", pos: [0.5714285714285714, -4.0, 0.5714285714285714], color: [1.0, 0.0, 0.0], labeled: false, size: 3.0, border: true },
+    {name: "P", type: "Free", pos: [0.0, -4.0, 0.5], color: [1.0, 0.0, 0.0], labeled: false, size: 3.0, border: true },
+    {name: "Q", type: "Free", pos: [0.0, -4.0, 0.4444444444444444], color: [1.0, 0.0, 0.0], labeled: false, size: 3.0, border: true }
   ],
   ports: [{
     id: "CSCanvas",
-    width: 1081,
-    height: 456,
-    transform: [{visibleRect: [-21.788071778544637, 9.22286314039894, 23.496940153332453, -9.876253989582517]}],
+    width: 1034,
+    height: 480,
+    transform: [{visibleRect: [-21.788071778544637, 9.22286314039894, 21.536767605781723, -10.881470680634173]}],
     axes: true,
-    grid: 2.5,
+    grid: 1.0,
     snap: true,
     background: "rgb(247,247,247)"
   }],
